@@ -1,4 +1,4 @@
-package javacore.builjdbc;
+package javacoreutil;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +9,7 @@ public class DBConnection {
         Connection conn = null;
 
         try {
-            String url = "jdbc:mysql://localhost:3306/demo_jdbc";
+            String url = "jdbc:mysql://localhost:3306/demo_jdbc?serverTimezone=Asia/Tokyo";
             String user = "root";
             String password = "1256";  
 
@@ -17,7 +17,7 @@ public class DBConnection {
 
             System.out.println("Ket noi thanh cong!");
 
-        } catch (Exception e) {
+     } catch (Exception e) {
             System.out.println("Ket noi that bai!");
             e.printStackTrace();
         }

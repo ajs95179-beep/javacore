@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+import javacoreutil.DBConnection;
+
 public class BuildingJdbc {
 
     public static void main(String[] args) {
